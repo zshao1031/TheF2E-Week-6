@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!--========================-->
+	<!--※※【網頁顯示資訊設定】※※-->	
+	<!--========================-->
+	
+	<!--使用編碼-->
+    <meta charset="UTF-8">
+    
+    <!--頁籤設定-->
+	<title>TheF2E Week6: Validation</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
+    
+    <!--把螢幕解析度的寬度變成載具的寬度(RWD用)-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--網站描述與關鍵字設定-->
+	<meta name="description" content="此網站為書豪參加TheF2E的第六週作品">
+	<meta name="keywords" content="TheF2E, Week6, Validation">
+
+    <!--網站貼在Facebook上時顯示的資訊-->
+	<meta property="og:title" content="TheF2E Week6: Validation">
+	<meta property="og:description" content="此網站為書豪參加TheF2E的第六週作品">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="img/TheF2E.jpg">
+
+    <!--IE相容性設定-->
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!--載入Roboto Font字型-->	
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900i">
+
+    <!--載入Font Awesome的Icons-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	<!--載入CSS-->
+	<link rel="stylesheet" href="css/CSSReset.css">
+	<link rel="stylesheet" href="css/all.css">
+	    
+    <!--載入jQuery-->	
+    <script src="js/jquery-2.2.3.min.js"></script>
+    
+	<!--載入javascript-->
+	<script src="js/all.js"></script>
+</head>
+
+<body>
+	
+	<div class="wrap">
+
+		<div class="header">
+			<div class="topBlock"></div>
+			<ul class="checkStepProcess">
+				<li>
+					<i class="createAccountStep currentStep far fa-dot-circle"></i>
+				</li>
+				<li>
+					<i class="generalInfomationStep far fa-circle"></i>
+				</li>
+				<li>
+					<i class="updateProfilePictureStep far fa-circle"></i>
+				</li>
+				<li>
+					<i class="paymentMethodStep far fa-circle"></i>
+				</li>
+				<li class="clearfix"></li>
+			</ul>
+			
+		</div>
+
+		<h1 class="mainTitle">Create Account</h1>
+		<p class="subtitle">Glad to see you here!</p>
+
+		<form action="form.php" method="post">
+
+			<label for="textAccount">Account</label>
+			<input type="text" id="textAccount" name="textAccount" placeholder="example@email.com">
+
+			<label for="textPassword">Password</label>
+			<input type="password" id="textPassword" name="textPassword" placeholder="●●●●●●●●">
+
+			<label for="textComfirmPassword">Comfirm Password</label>
+			<input type="password" id="textComfirmPassword" name="textComfirmPassword" placeholder="●●●●●●●●">
+
+			<input type="button" id="button" value="SUBMIT & NEXT">
+
+		</form>
+
+
+	</div>
+
+</body>
+
+</html>

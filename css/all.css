@@ -1,0 +1,218 @@
+.wrap
+{
+    width: 460px;
+    margin: 0 auto;
+}
+
+.topBlock
+{
+    border: 3px solid #0275D8;
+}
+
+/************************/
+
+.checkStepProcess
+{
+    margin: 54px auto 41px 102px;
+}
+
+/************************/
+
+.createAccountStep
+{
+    float: left;
+    font-size: 16px;
+    color: #BEE1FF;
+}
+
+.createAccountStep:after
+{
+    content:" ";
+    display: block;
+    float: right;
+    width: 64px;
+    background: #BEE1FF;
+    border: 1px solid #BEE1FF;
+    margin-top: 7px;
+}
+
+.createAccountStep.currentStep
+{
+    color: #0275D8;
+}
+
+/************************/
+
+.generalInfomationStep
+{
+    float: left;
+    font-size: 16px;
+    color: #BEE1FF;
+}
+
+.generalInfomationStep:after
+{
+    content:" ";
+    display: block;
+    float: right;
+    width: 64px;
+    background: #BEE1FF;
+    border: 1px solid #BEE1FF;
+    margin-top: 7px;
+}
+
+/************************/
+
+.updateProfilePictureStep
+{
+    float: left;
+    font-size: 16px;
+    color: #BEE1FF;
+}
+
+.updateProfilePictureStep:after
+{
+    content:" ";
+    display: block;
+    float: right;
+    width: 64px;
+    background: #BEE1FF;
+    border: 1px solid #BEE1FF;
+    margin-top: 7px;
+}
+
+/************************/
+
+.paymentMethodStep
+{
+    float: left;
+    font-size: 16px;
+    color: #BEE1FF;
+}
+
+
+
+
+/************************/
+.mainTitle
+{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 48px;
+    color: #000000;
+    text-align: center;
+}
+
+.subtitle
+{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 24px;
+    color: #000000;
+    text-align: center;    
+}
+
+/************************/
+
+form label
+{
+    display: block;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+/************************/
+
+#textAccount
+{
+    width: 100%;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 12px 20px 16px 20px;
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 24px;    
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+#textAccount::placeholder
+{
+    font-size: 20px;
+    color: #999999;
+}
+
+/************************/
+
+#textPassword
+{
+    width: 100%;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 12px 20px 16px 20px;
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 24px;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+#textPassword::placeholder
+{
+    font-size: 20px;
+    color: #9B9B9B;
+}
+
+/************************/
+
+#textComfirmPassword
+{
+    width: 100%;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 12px 20px 16px 20px;
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 24px;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+#textComfirmPassword::placeholder
+{
+    font-size: 20px;
+    color: #9B9B9B;
+}
+
+
+/************************/
+
+#button{
+    width: 100%;
+    background: #BEE1FF;
+    border: 2px solid #BEE1FF;
+    border-radius: 8px;
+    margin-top: 40px;
+    font-family: 'Roboto';
+    padding-top: 14px;
+    padding-bottom: 13px;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
