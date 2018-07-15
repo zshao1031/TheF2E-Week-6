@@ -90,9 +90,6 @@
     color: #BEE1FF;
 }
 
-
-
-
 /************************/
 .mainTitle
 {
@@ -150,6 +147,56 @@ form label
     color: #999999;
 }
 
+#textAccount.showWarning
+{
+    border: 2px solid #F5A623;
+}
+
+.accountArea
+{
+    position: relative;
+}
+
+.textAccountWarning
+{
+    font-size: 20px;
+    color: #F5A623;
+    position: absolute;
+    bottom: 16px;
+    right: 20px;
+}
+
+.textAccountTooltip
+{
+    display: inline-block;
+    background: #F5A623;
+    border-radius: 4px;
+    padding: 6px 8px 6px 8px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 14px;
+    position: absolute;
+    bottom: 13px;
+    right: -127px;
+}
+
+.textAccountTooltip::before
+{
+    content: " ";
+    width: 0;
+    border-right: 6px solid #F5A623;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    position: absolute;
+    left: -6px;
+    top: 50%;
+    margin-top: -4px;
+}
+
 /************************/
 
 #textPassword
@@ -172,6 +219,56 @@ form label
 {
     font-size: 20px;
     color: #9B9B9B;
+}
+
+#textPassword.showWarning
+{
+    border: 2px solid #F5A623;
+}
+
+.passwordArea
+{
+    position: relative;
+}
+
+.textPasswordWarning
+{
+    font-size: 20px;
+    color: #F5A623;
+    position: absolute;
+    bottom: 16px;
+    right: 20px;
+}
+
+.textPasswordTooltip
+{
+    display: inline-block;
+    background: #F5A623;
+    border-radius: 4px;
+    padding: 6px 8px 6px 8px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 14px;
+    position: absolute;
+    bottom: 13px;
+    right: -197px;
+}
+
+.textPasswordTooltip::before
+{
+    content: " ";
+    width: 0;
+    border-right: 6px solid #F5A623;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    position: absolute;
+    left: -6px;
+    top: 50%;
+    margin-top: -4px;
 }
 
 /************************/
@@ -198,13 +295,64 @@ form label
     color: #9B9B9B;
 }
 
+#textComfirmPassword.showWarning
+{
+    border: 2px solid #F5A623;
+}
+
+.comfirmPasswordArea
+{
+    position: relative;
+}
+
+.textComfirmPasswordWarning
+{
+    font-size: 20px;
+    color: #F5A623;
+    position: absolute;
+    bottom: 16px;
+    right: 20px;
+}
+
+.textComfirmPasswordTooltip
+{
+    display: inline-block;
+    background: #F5A623;
+    border-radius: 4px;
+    padding: 6px 8px 6px 8px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 14px;
+    position: absolute;
+    bottom: 13px;
+    right: -111px;
+}
+
+.textComfirmPasswordTooltip::before
+{
+    content: " ";
+    width: 0;
+    border-right: 6px solid #F5A623;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    position: absolute;
+    left: -6px;
+    top: 50%;
+    margin-top: -4px;
+}
+
 
 /************************/
 
-#button{
+#submitButton
+{
     width: 100%;
-    background: #BEE1FF;
-    border: 2px solid #BEE1FF;
+    background: #0275D8;
+    border: 2px solid #4A90E2;
     border-radius: 8px;
     margin-top: 40px;
     font-family: 'Roboto';
@@ -214,5 +362,11 @@ form label
     line-height: 25px;
     color: #FFFFFF;
     text-align: center;
+}
+
+#submitButton.dataCheckFail
+{
+    background: #BEE1FF;
+    border: 2px solid #BEE1FF;
 }
 

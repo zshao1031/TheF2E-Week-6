@@ -39,13 +39,13 @@
 
 	<!--載入CSS-->
 	<link rel="stylesheet" href="css/CSSReset.css">
-	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/step1.css">
 	    
     <!--載入jQuery-->	
     <script src="js/jquery-2.2.3.min.js"></script>
     
 	<!--載入javascript-->
-	<script src="js/all.js"></script>
+	<script src="js/step1.js"></script>
 </head>
 
 <body>
@@ -76,18 +76,29 @@
 		<p class="subtitle">Glad to see you here!</p>
 
 		<form action="form.php" method="post">
-
-			<label for="textAccount">Account</label>
-			<input type="text" id="textAccount" name="textAccount" placeholder="example@email.com">
-
-			<label for="textPassword">Password</label>
-			<input type="password" id="textPassword" name="textPassword" placeholder="●●●●●●●●">
-
-			<label for="textComfirmPassword">Comfirm Password</label>
-			<input type="password" id="textComfirmPassword" name="textComfirmPassword" placeholder="●●●●●●●●">
-
-			<input type="button" id="button" value="SUBMIT & NEXT">
-
+			<ul>
+				<li class="accountArea">
+					<label for="textAccount">Account</label>
+					<input type="text" id="textAccount" name="textAccount" placeholder="example@email.com">
+					<i class="textAccountWarning fas fa-exclamation-triangle" style="display:none;"></i>
+					<div class="textAccountTooltip" style="display:none;">INVALID EMAIL</div>
+				</li>
+				<li class="passwordArea">
+					<label for="textPassword">Password</label>
+					<input type="password" id="textPassword" name="textPassword" placeholder="●●●●●●●●">
+					<i class="textPasswordWarning fas fa-exclamation-triangle" style="display:none;"></i>
+					<div class="textPasswordTooltip" style="display:none;">MINIMUM 8 CHARACTERS</div>
+				</li>
+				<li class="comfirmPasswordArea">
+					<label for="textComfirmPassword">Comfirm Password</label>
+					<input type="password" id="textComfirmPassword" name="textComfirmPassword" placeholder="●●●●●●●●">		
+					<i class="textComfirmPasswordWarning fas fa-exclamation-triangle" style="display:none;"></i>
+					<div class="textComfirmPasswordTooltip" style="display:none;">NOT MATCH</div>
+				</li>
+				<li>
+					<input type="submit" id="submitButton" value="SUBMIT & NEXT" class="dataCheckFail">
+				</li>
+			</ul>
 		</form>
 
 
